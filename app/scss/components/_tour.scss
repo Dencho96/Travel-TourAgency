@@ -3,10 +3,6 @@
     border-radius: 5px;
     background-color: white;
 
-    &:hover {
-        box-shadow: 0 2px 50px rgba(0, 0, 0, 0.2);
-    }
-
     &__head {
         position: relative;
     }
@@ -26,7 +22,8 @@
     &__details {
         left: 10px;
         transition: backgroun-color, 0.3s;
-        &:hover{
+
+        &:hover {
             background-color: rgba($blue, 0.7);
         }
     }
@@ -35,7 +32,7 @@
         right: 10px;
     }
 
-    &__price-currency{
+    &__price-currency {
         font-size: 12px;
     }
 
@@ -74,7 +71,7 @@
         font-size: 12px;
     }
 
-    &__order {
+    &__btn {
         display: inline-block;
         min-width: 170px;
         padding: 11px 15px 11px 15px;
@@ -82,5 +79,10 @@
         border-radius: 28px;
         background-color: $blue;
         color: white;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: rgba($blue, 0.8);
+        }
     }
 }

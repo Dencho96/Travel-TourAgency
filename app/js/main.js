@@ -13,8 +13,12 @@ var mySwiper1 = new Swiper('.testimonials__slider', {
   spaceBetween: 30,
   loop: 'true',
   direction: 'horizontal',
+    autoplay: {
+    delay: 5000,
+  },
+  
   navigation: {
-    nextEl: '.testimonials__btn--prev',
-    prevEl: '.testimonials__btn--next',
+    nextEl: '.testimonials__btn--next',
+    prevEl: '.testimonials__btn--prev',
   },
 });
