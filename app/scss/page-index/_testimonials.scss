@@ -1,0 +1,38 @@
+.testimonials {
+    padding: 85px 0;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title {
+        margin-bottom: 35px;
+        font-size: 34px;
+        font-weight: 700;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    &__item {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    &__avatar {
+        margin-bottom: 15px;
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+    }
+
+    &__name,
+    &__text {
+        font-weight: 700;
+    }
+    &__name{
+        font-size: 18px;
+        margin-bottom: 35px;
+    }
+    &__text {
+        line-height: 27px;
+    }
+}

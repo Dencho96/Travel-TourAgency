@@ -1,0 +1,29 @@
+.header{
+    &__wrapper{
+        justify-content: space-between;
+        align-items: center;
+        min-height: 70px;
+    }
+    &__nav{
+        margin-left: auto;
+    }
+    &__nav-list{
+        justify-content: space-between;
+        @include list-reset;
+    }
+    &__nav-link{
+        display: inline-block;
+        padding: 27px 15px;
+        color: #7e7e7e;
+        &:hover{
+            background-color: $blue;
+            color: white;
+        }
+    }
+    &__call{
+        padding: 27px 15px;
+        background-image: linear-gradient(to right, #6170ff 0%, #8e4aeb 44%, #8e4aeb 100%);
+        font-weight: 700;
+        color: white;
+    }
+}

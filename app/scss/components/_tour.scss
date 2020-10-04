@@ -1,0 +1,86 @@
+.tour {
+    max-width: 350px;
+    border-radius: 5px;
+    background-color: white;
+
+    &:hover {
+        box-shadow: 0 2px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    &__head {
+        position: relative;
+    }
+
+    &__details,
+    &__price {
+        position: absolute;
+        bottom: 10px;
+        display: inline-block;
+        font-size: 19px;
+        color: white;
+        background-color: rgba(black, 0.5);
+        border-radius: 15px;
+        padding: 6px 12px 6px 12px;
+    }
+
+    &__details {
+        left: 10px;
+        transition: backgroun-color, 0.3s;
+        &:hover{
+            background-color: rgba($blue, 0.7);
+        }
+    }
+
+    &__price {
+        right: 10px;
+    }
+
+    &__price-currency{
+        font-size: 12px;
+    }
+
+    &__img {
+        max-width: 350px;
+        width: 100%;
+        max-height: 203px;
+        height: 100%;
+        border-radius: 5px 5px 0 0;
+        object-fit: cover;
+    }
+
+    &__info {
+        padding: 20px;
+        text-align: center;
+    }
+
+    &__title {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 21px;
+        font-weight: 700;
+    }
+
+    &__location,
+    &__text {
+        color: #424242;
+    }
+
+    &__location {
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        margin: 0 0 10px 0;
+        font-size: 12px;
+    }
+
+    &__order {
+        display: inline-block;
+        min-width: 170px;
+        padding: 11px 15px 11px 15px;
+        border: none;
+        border-radius: 28px;
+        background-color: $blue;
+        color: white;
+    }
+}
