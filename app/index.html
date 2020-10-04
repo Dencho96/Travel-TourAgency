@@ -22,12 +22,7 @@
                             <a href="#" class="header__nav-link">
                                 Найти тур
                             </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">
-                                О нас
-                            </a>
-                        </li>
+                        </li>                        
                         <li class="header__nav-item">
                             <a href="#" class="header__nav-link">
                                 Популярные туры
@@ -45,9 +40,14 @@
                         </li>
                         <li class="header__nav-item">
                             <a href="#" class="header__nav-link">
-                                Контакты
+                                О нас
                             </a>
                         </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                Контакты
+                            </a>
+                        </li>                        
                     </ul>
                 </nav>
                 
@@ -224,19 +224,34 @@
             </div>
         </section>
         <section class="testimonials" style="background-image: url(images/testimonials-bg.jpg);">
-            <div class="container">
+            <div class="container testimonials__container">
                 <div class="testimonials__title">
                     Отзывы
                 </div>
-                <div class="testimonials__item">
-                    <img class="testimonials__avatar" src="images/avatar-1.jpg" alt="avatar">
-                    <div class="testimonials__name">
-                        Виктория
+                <div class="swiper-container testimonials__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonials__item">
+                            <img class="testimonials__avatar" src="images/avatar-1.jpg" alt="avatar">
+                            <div class="testimonials__name">
+                                Виктория
+                            </div>
+                            <p class="testimonials__text">
+                                Большое спасибо за положительные эмоции. Сотрудники фирмы професионально организовали поездку. Если вы ищете агентство, в котором хотите быть уверены - обращайтесь в Travel. 
+                            </p>
+                        </div>
+                        <div class="swiper-slide testimonials__item">
+                            <img class="testimonials__avatar" src="images/avatar-2.jpg" alt="avatar">
+                            <div class="testimonials__name">
+                                Иван
+                            </div>
+                            <p class="testimonials__text">
+                                Отлично организованый отпуск и прекрасные впечатления. Все это останется в вашей памяти после благодаря данному агентству. Думаю, что обращусь к вам еще не один раз. Спасибо за положительные эмоции !
+                            </p>
+                        </div>
                     </div>
-                    <p class="testimonials__text">
-                        Большое спасибо за положительные эмоции. Сотрудники фирмы професионально организовали поездку. Если вы ищете агентство, в котором хотите быть уверены - обращайтесь в Travel. 
-                    </p>
                 </div>
+                <button class="testimonials__btn testimonials__btn--prev"></button>
+                <button class="testimonials__btn testimonials__btn--next"></button>
             </div>
         </section>
     </main>

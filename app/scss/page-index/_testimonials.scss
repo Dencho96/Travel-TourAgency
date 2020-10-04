@@ -11,28 +11,50 @@
         font-weight: 700;
         text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     }
-
-    &__item {
+    &__container{
+        position: relative;
+    }
+    &__slider{
         max-width: 720px;
         margin: 0 auto;
     }
-
     &__avatar {
         margin-bottom: 15px;
         height: 75px;
         width: 75px;
         border-radius: 50%;
+        object-fit: cover;
     }
 
-    &__name,
-    &__text {
-        font-weight: 700;
-    }
     &__name{
+        font-weight: 700;
         font-size: 18px;
         margin-bottom: 35px;
     }
     &__text {
+        font-weight: 500;
         line-height: 27px;
+    }
+    &__btn{
+        position: absolute;
+        top: 50%;
+        width: 18px;
+        height: 32px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        &--prev, &--next{
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &--prev{
+            background-image: url(../../images/arrow-prev.png);
+            left: 0;
+            
+        }
+        &--next{
+            background-image: url(../../images/arrow-next.png);
+            right: 0;
+        }
     }
 }
