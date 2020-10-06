@@ -55,6 +55,16 @@
         margin-bottom: 10px;
         font-size: 21px;
         font-weight: 700;
+        transition: color, 0.2s;
+        &:hover{
+            color: $blue;
+        }
+        &:active{
+            color: pink;
+        }
+        &:focus{
+            color: gold;
+        }
     }
 
     &__location,
@@ -64,6 +74,16 @@
 
     &__location {
         margin-bottom: 10px;
+        transition: color, 0.2s;
+        &:hover{
+            color: $blue;
+        }
+        &:active{
+            color: pink;
+        }
+        &:focus{
+            color: gold;
+        }
     }
 
     &__text {
@@ -80,7 +100,7 @@
         background-color: $blue;
         color: white;
         transition: background-color 0.2s;
-
+        cursor: pointer;
         &:hover {
             background-color: rgba($blue, 0.8);
         }

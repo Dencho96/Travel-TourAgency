@@ -1,35 +1,58 @@
-.header{
-    &__wrapper{
+.header {
+    &__wrapper {
         justify-content: space-between;
         align-items: center;
         min-height: 70px;
     }
-    &__nav{
+
+    &__nav {
         margin-left: auto;
     }
-    &__nav-list{
+
+    &__nav-list {
         justify-content: space-between;
         @include list-reset;
     }
-    &__nav-link{
+
+    &__nav-link {
         display: inline-block;
         padding: 27px 15px;
         color: #7e7e7e;
         transition-property: background-color, color;
         transition-duration: 0.2s;
-        &:hover{
+        outline: transparent;
+
+        &:hover {
             background-color: $blue;
             color: white;
         }
+
+        &:focus {
+            color: gold;
+        }
+
+        &:active {
+            color: pink;
+        }
     }
-    &__call{
+
+    &__call {
         padding: 27px 15px;
         background-image: linear-gradient(to right, #6170ff 0%, #8e4aeb 44%, #8e4aeb 100%);
         font-weight: 700;
         color: white;
         transition: opacity, 0.2s;
-        &:hover{
+
+        &:hover {
             opacity: 0.8;
+        }
+
+        &:focus {
+            color: gold;
+        }
+
+        &:active {
+            color: pink;
         }
     }
 }

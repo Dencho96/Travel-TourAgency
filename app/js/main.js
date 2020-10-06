@@ -14,7 +14,7 @@ var mySwiper1 = new Swiper('.testimonials__slider', {
   loop: 'true',
   direction: 'horizontal',
     autoplay: {
-    delay: 5000,
+    delay: 4000,
   },
   
   navigation: {
