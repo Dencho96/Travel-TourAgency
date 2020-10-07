@@ -32,7 +32,8 @@ gulp.task('style', function() {
     return gulp.src([
             'node_modules/normalize.css/normalize.css',
             'node_modules/swiper/swiper-bundle.css',
-            'node_modules/font-awesome/css/font-awesome.css'
+            'node_modules/font-awesome/css/font-awesome.css',
+            'node_modules/hamburgers/dist/hamburgers.css'
         ])
         .pipe(concat('libs.min.css'))
         .pipe(cssmin())

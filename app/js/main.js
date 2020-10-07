@@ -6,6 +6,17 @@ var mySwiper = new Swiper('.hot__slider', {
         delay: 5000,
       },
     direction: 'horizontal',
+    breakpoints: {
+        992: {
+          slidesPerView: 3,
+        },
+        770: {
+          slidesPerView: 2,
+        },
+        320: {
+          slidesPerView: 1,
+        },
+    }
 });
 
 var mySwiper1 = new Swiper('.testimonials__slider', {
@@ -21,4 +32,12 @@ var mySwiper1 = new Swiper('.testimonials__slider', {
     nextEl: '.testimonials__btn--next',
     prevEl: '.testimonials__btn--prev',
   },
+});
+
+$(".header__btn").click(function(){
+  $(".header__btn").toggleClass("is-active");
+});
+
+$('.header__btn').on('click', function() {
+  $('.header__nav').slideToggle();
 });

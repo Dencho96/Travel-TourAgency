@@ -5,6 +5,18 @@
         min-height: 70px;
     }
 
+    &__btn{
+        display: none;
+        outline: transparent;
+    }
+
+    &__btn-inner{
+        background-image: linear-gradient(to right, #6170ff 0%, #8e4aeb 44%, #8e4aeb 100%);
+        &::before, &::after{
+            background-image: linear-gradient(to right, #6170ff 0%, #8e4aeb 44%, #8e4aeb 100%);
+        }
+    }
+
     &__nav {
         margin-left: auto;
     }
