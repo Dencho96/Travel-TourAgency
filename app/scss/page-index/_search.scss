@@ -26,15 +26,6 @@
         color: gray;
         transition: box-shadow 0.2s;
 
-        &:hover {
-            box-shadow: 0 0 3px #555;
-            z-index: 2;
-        }
-
-        &:focus {
-            box-shadow: 0 0 3px gold;
-            z-index: 2;
-        }
 
         &+& {
             margin-left: 45px;
@@ -45,8 +36,23 @@
             width: 100%;
         }
 
-        &--date{
+        &--date {
             max-width: 220px;
+        }
+
+        &:hover {
+            box-shadow: 0 0 3px #555;
+            z-index: 2;
+        }
+
+        &:focus {
+            box-shadow: 0 0 3px gold;
+            z-index: 2;
+        }
+
+        &::placeholder{
+            color: grey;
+            font-weight: 500;
         }
     }
 

@@ -35,9 +35,18 @@ var mySwiper1 = new Swiper('.testimonials__slider', {
 });
 
 $(".header__btn").click(function(){
-  $(".header__btn").toggleClass("is-active");
+    $(".header__btn").toggleClass("is-active");
 });
 
 $('.header__btn').on('click', function() {
-  $('.header__nav').slideToggle();
+    $('.header__nav').slideToggle();
+});
+
+// flatpickr('.flatpickr.js-flatpickr-dateTime',{
+//     enableTime: true,
+//     altInput: true,
+// });
+
+$('.flatpickr.js-flatpickr-dateTime').flatpickr({
+    minDate: "today",
 });

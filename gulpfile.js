@@ -21,7 +21,8 @@ gulp.task('sass', function() {
 
 gulp.task('script', function() {
     return gulp.src([
-            'node_modules/swiper/swiper-bundle.js'
+            'node_modules/swiper/swiper-bundle.js',
+            'node_modules/flatpickr/dist/flatpickr.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
@@ -33,7 +34,8 @@ gulp.task('style', function() {
             'node_modules/normalize.css/normalize.css',
             'node_modules/swiper/swiper-bundle.css',
             'node_modules/font-awesome/css/font-awesome.css',
-            'node_modules/hamburgers/dist/hamburgers.css'
+            'node_modules/hamburgers/dist/hamburgers.css',
+            'node_modules/flatpickr/dist/flatpickr.css'
         ])
         .pipe(concat('libs.min.css'))
         .pipe(cssmin())
