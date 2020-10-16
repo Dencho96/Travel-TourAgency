@@ -210,3 +210,11 @@
     }
 
 }
+
+@media (min-width: 1200px) {
+    .header{
+        &__nav{
+            display: block !important;
+        }
+    }
+}
